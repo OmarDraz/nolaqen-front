@@ -1,0 +1,135 @@
+*{
+    overflow-x: hidden;
+}
+
+.coursesGrid{
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 100%;
+}
+
+.contentGrid{
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 100%;
+}
+
+.courseDetails{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 19px -8px rgb(0 0 0 / 25%);
+}
+
+.course-card{
+    width: 300px;
+    height: 300px;
+    box-shadow: 1px 1px 8px -4px gray;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courseTitle{
+    color: rgba(128, 128, 128, 0.795);
+}
+
+.courseImg{
+    width: 100%;
+    height: auto;
+}
+
+.decorators{
+    position: fixed;
+    right: 0;
+    z-index: -1;
+    width: 85%
+}
+
+.teacherSVG{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    z-index: 1;
+}
+
+.vidContainer{
+    width: '80%';
+    position: 'relative';
+    margin: 'auto';
+    height: 'auto';
+}
+
+.registerForm{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    width: 100%
+}
+
+.MuiPaper-rounded{
+    border-radius: 1px !important
+}
+.MuiPaper-elevation1{
+    box-shadow:  0px 2px 8px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%) !important;
+}
+.MuiSlider-thumb{
+    overflow: hidden;
+}
+.contentCard{
+    width: 100%;
+    margin: 5px
+}
+
+@media screen and (max-width: 970px){
+    .coursePage{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+    .coursesGrid{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 696px){
+    .coursesGrid{
+        grid-template-columns: 100% !important
+    }
+    .contentGrid{
+        grid-template-columns: 100% !important
+    }
+    .teacherSVG{
+        
+        width: 45%
+    }
+    .coursePage{
+        margin: 10px 10px !important
+    }
+    .responsivePanel{
+        width: 90% !important
+    }
+    .card{
+        width: 90% !important;
+        height: 200px
+    }
+    .questionCard{
+        width: 80% !important
+    }
+    .registerForm{
+        grid-template-columns: 100%
+    }
+}

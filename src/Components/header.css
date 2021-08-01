@@ -1,0 +1,72 @@
+.header{
+    height: auto;
+    background: #fff;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    box-shadow: 1px 1px 8px -4px black;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menuIcon{
+    position: absolute;
+    left: 0;
+    display: none
+}
+
+.drawer{
+    display: none;
+}
+
+@media screen and (max-width: 970px){
+    nav{
+        display: flex;
+        width: 100%;
+    }
+    .header{
+        height: 15vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+    }
+    .logo{
+        padding-right: 20px;
+    }
+    .links{
+        display:none
+    }
+
+    .title{
+        display: block;
+        margin-right: 10%;
+    }
+
+    .menuIcon{
+        display: block;
+    }
+    .drawer{
+        display: block;
+    }
+}
+.MuiPaper-root{
+    background-color: '#3f51b5' !important
+}

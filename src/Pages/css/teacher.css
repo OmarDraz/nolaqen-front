@@ -1,0 +1,155 @@
+.nav{
+    position: fixed;
+    height: 10%;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    overflow-x: hidden;
+    box-shadow: 1px 1px 8px -4px black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.panel{
+    width: 20%;
+    position: fixed;
+    right: 0;
+    background-color: black;
+    height: 100vh;
+    z-index: 1;
+    overflow-y: hidden;
+    color: white
+}
+
+.MuiAccordionSummary-content{
+    overflow: hidden;
+}
+
+.MuiDataGrid-columnHeader--alignCenter{
+    overflow: hidden
+}
+.MuiDataGrid-selectedRowCount{
+    overflow: hidden
+}
+.MuiDataGrid-cell--textLeft{
+    text-align: right !important;
+}
+.MuiDataGrid-footerContainer{
+    display: none
+}
+.MuiDataGrid-iconButtonContainer{
+    display: none !important
+}
+.MuiDataGrid-menuIcon{
+    display: none !important
+}
+.MuiDataGrid-footerContainer{
+    display: none !important
+}
+.MuiMenu-paper{
+    background-color: white;
+    width: 76%
+}
+.MuiDialog-container{
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+.MuiDialog-paperScrollPaper{
+    background-color: white;
+}
+.MuiFormControlLabel-root{
+    margin-left: 0 !important;
+    margin-right: 0 !important
+}
+.MuiFormControlLabel-label{
+    overflow: hidden;
+}
+.MuiAccordionSummary-root{
+    overflow: hidden
+}
+.MuiTypography-root{
+    overflow: hidden
+}
+.MuiPickersCalendarHeader-daysHeader{
+    overflow: hidden
+}
+.MuiPickersClockNumber-clockNumberSelected{
+    color: #ff5658 !important
+}
+.MuiDataGrid-root .MuiDataGrid-row{
+    width: 100% !important
+}
+.MuiDataGrid-renderingZone{
+    width: 100%
+}
+.MuiDataGrid-window{
+    overflow: 'hidden' !important
+}
+.active-link{
+    color: #ff5658 !important
+}
+
+
+.textfield__label{
+    left: auto;
+    font-family: "Cairo";
+    height: 25px;
+    overflow: hidden
+}
+
+.customInput{
+    border: 0.2px solid grey;
+    width: 150px;
+    outline: none;
+    margin: 20px 0;
+}
+
+input[type=time]::-webkit-time-edit-ampm-field {
+    display: none !important;
+  }
+  
+.customInput:focus{
+    border: 0.1px solid grey
+}
+.MuiPopover-paper{
+    width: 10%;
+    overflow: hidden
+}
+.textArea:focus{
+    border: 0.1px solid grey;
+    outline: none
+}
+
+
+.coursesGrid{
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 100%;
+}
+
+.card{
+    width: 300px;
+    height: 250px;
+    box-shadow: 1px 1px 8px -4px gray;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courseTitle{
+    color: rgba(128, 128, 128, 0.795);
+}
+
+.courseImg{
+    width: 100%;
+    height: auto;
+}
