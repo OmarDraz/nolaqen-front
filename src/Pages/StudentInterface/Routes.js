@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
-import LoginPage from './LoginPage';
-import RegisterPage from './RegisterPage';
-import HomePage from './HomePage';
+import React from 'react';
+import { BrowserRouter as  Route,  } from 'react-router-dom';
+
 import CoursesPage from './CoursesPage';
-import Logout from '../../Components/logout';
 
 
 import Course from './Course'
 import Header from '../../Components/Header';
-import Redir from '../../Components/redirect'
 import '../../App.css';
 import CourseContent from './CourseContent';
 import SingleLesson from './SingleLesson';

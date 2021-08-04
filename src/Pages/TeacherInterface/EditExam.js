@@ -21,7 +21,6 @@ import Checkbox from '@material-ui/core/Checkbox';
 import MuiDialogTitle from '@material-ui/core/DialogTitle';
 import * as moment  from 'moment';
 import MuiDialogContent from '@material-ui/core/DialogContent';
-import SimpleDialog from './dialog';
 import MuiDialogActions from '@material-ui/core/DialogActions';
 import FormGroup from '@material-ui/core/FormGroup';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';

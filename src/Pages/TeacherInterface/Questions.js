@@ -1,66 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import TeacherHeader from './Header.js';
 import Dialog from '@material-ui/core/Dialog';
 import TextField from "@material-ui/core/TextField";
 import MenuItem from '@material-ui/core/MenuItem';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { DateTimePicker, KeyboardDateTimePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
-import DateMomentUtils from '@date-io/moment';
-
-import FormLabel from '@material-ui/core/FormLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import DeleteIcon from '@material-ui/icons/Delete';
-import Divider from '@material-ui/core/Divider';
 import ClearIcon from '@material-ui/icons/Clear';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import Checkbox from '@material-ui/core/Checkbox';
-import MuiDialogTitle from '@material-ui/core/DialogTitle';
-import * as moment  from 'moment';
-import MuiDialogContent from '@material-ui/core/DialogContent';
-import SimpleDialog from './dialog';
-import MuiDialogActions from '@material-ui/core/DialogActions';
-import FormGroup from '@material-ui/core/FormGroup';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
-import ErrorIcon from '@material-ui/icons/Error';
-import Popover from '@material-ui/core/Popover';
-import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
+    BrowserRouter as 
     Link,
-    Redirect,
   } from "react-router-dom";
-  import {
-      Accordion,
-      AccordionDetails,
-      AccordionSummary,
-    Typography,
-  } from "@material-ui/core";
-import SidePanel from './SidePanel.js';
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import EditIcon from '@material-ui/icons/Edit';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import { useParams } from 'react-router-dom';
-import { DataGrid, GridToolbar } from '@material-ui/data-grid';
-import { Container, Paper, Box } from '@material-ui/core';
 import axiosInstance from "../../axios";
 import { makeStyles } from '@material-ui/core/styles';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import Menu from "@material-ui/core/Menu";
 import NoLogs from '../../svg/NoLogs.svg'
 import {
     withStyles,
-    MuiThemeProvider,
-    createMuiTheme,
   } from "@material-ui/core";
-import axios from 'axios';
 
   const useStyles = makeStyles((theme) => ({
     root: {
@@ -109,29 +71,9 @@ const QuestionsPage = () => {
     const [teacherCourses, setTeacherCourses] = useState([]);
     const [questions, setQuestions] = useState([]);
     const [courseSelected, setCourseSelected] = useState('');
-    const [start_at, setStartAt] = useState(new Date());
-    const [end_at, setEndAt] = useState(new Date());
 
     const lowerCaseQuery = query.toLowerCase();
 
-
-    const columns = [
-        {
-            field: "id",
-            headerName: "رقم الاجابة",
-            flex: 1,
-        },
-        {
-            field: "content",
-            headerName: "محتوى الاجابة",
-            flex: 5,
-        },
-        {
-            field: "degree",
-            headerName: "درجة السؤال",
-            flex: 1,
-        }
-    ]
     const handleDialogClose = () => {
         setDeleteAlert(false)
     }
@@ -159,26 +101,7 @@ const QuestionsPage = () => {
 
       const classes = useStyles();
 
-    const StyledFormControlLabel = withStyles({
-        root: {
-          "& label": {
-            fontFamily: "Cairo",
-          }
-        }
-      })(FormControlLabel);
-      const StyledTextField = withStyles({
-        root: {
-          "& label": {
-            left: "auto",
-            fontFamily: "Cairo",
-            height: "20px",
-            overflow: 'hidden'
-          },
-          "& legend": {
-            textAlign: "right",
-          }
-        }
-      })(TextField);
+
 
     return(
         <div>

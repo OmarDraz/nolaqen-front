@@ -1,21 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Header from '../../Components/Header';
 import screenful from "screenfull";
-import ReactPlayer from 'react-player';
 import { Container, Grid, makeStyles, withStyles, Button, IconButton, Typography } from '@material-ui/core';
 import ReactHlsPlayer from 'react-hls-player';
 import Decorators from '../../svg/decorators2.svg'
-import vid from '../../svg/vid.svg'
-import Slider from '@material-ui/core/Slider';
-import FastRewindIcon from '@material-ui/icons/FastRewind';
-import FastForwardIcon from '@material-ui/icons/FastForward';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import VolumeUpIcon from '@material-ui/icons/VolumeUp';
-import FullScreenIcon from '@material-ui/icons/Fullscreen';
-import Popover from '@material-ui/core/Popover';
-import PauseIcon from '@material-ui/icons/Pause';
-import Tooltip from '@material-ui/core/Tooltip';
-import vidIcon from './videoIcon.png';
 import Controls from './PlayerControls'
 import { useParams } from 'react-router-dom';
 import axiosInstance from '../../axios';

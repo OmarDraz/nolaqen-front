@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import { makeStyles } from '@material-ui/styles';
-import { DataGrid, isOverflown } from '@material-ui/data-grid';
+import { isOverflown } from '@material-ui/data-grid';
 
 const useStyles = makeStyles(() => ({
   root: {

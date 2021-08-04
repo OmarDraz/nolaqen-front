@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axiosInstance from '../../axios';
 import Pagination from '@material-ui/lab/Pagination';
-import Header from '../../Components/Header';
 import '../css/exam.css'
 
 const useStyles = makeStyles((theme) => ({

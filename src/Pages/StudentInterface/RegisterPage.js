@@ -1,18 +1,11 @@
 import React, { useState } from 'react';
 import {Button, makeStyles} from "@material-ui/core";
 import axiosInstance from "../../axios";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import Select from '@material-ui/core/Select';
 import MenuItem from "@material-ui/core/MenuItem";
-import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import Decor from '../../svg/register.svg'
-import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { FormLabel } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
 import { useHistory, Link } from 'react-router-dom';
 

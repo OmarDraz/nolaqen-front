@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Container from "@material-ui/core/Container";
-import Header from "../../Components/Header";
 import CustomizedDialogs from "../../Components/dialog";
 import Divider from '@material-ui/core/Divider';
 import '../css/courses.css';
 import axiosInstance from "../../axios";
-import { Button } from '@material-ui/core';
 import decorators from '../../svg/Decorators.svg';
 import teacher from '../../svg/Teacher.svg';
 import Cover from './cover.png'

@@ -1,43 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import TeacherHeader from './Header.js';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import NativeSelect from '@material-ui/core/NativeSelect';
 import Dialog from '@material-ui/core/Dialog';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import IconButton from "@material-ui/core/IconButton";
 import AccountBoxIcon from '@material-ui/icons/AccountBox';
-import clsx from 'clsx';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { makeStyles } from '@material-ui/styles';
-import Popover from '@material-ui/core/Popover';
-import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    Redirect,
+    BrowserRouter as 
     useHistory,
   } from "react-router-dom";
   import {
-      Accordion,
-      AccordionDetails,
-      AccordionSummary,
     TextField,
-    Typography,
   } from "@material-ui/core";
-import SidePanel from './SidePanel.js';
 import Button from "@material-ui/core/Button";
 import PaymentIcon from '@material-ui/icons/Payment';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import { useParams } from 'react-router-dom';
 import { DataGrid } from '@material-ui/data-grid';
-import { Container, Paper, Box } from '@material-ui/core';
 import axiosInstance from "../../axios";
-import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import '../css/teacher.css';
 

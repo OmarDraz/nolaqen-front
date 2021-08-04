@@ -1,27 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import TeacherHeader from './Header.js';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Popover from '@material-ui/core/Popover';
-import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    Redirect,
-  } from "react-router-dom";
-  import {
-      Accordion,
-      AccordionDetails,
-      AccordionSummary,
-    Typography,
-  } from "@material-ui/core";
-import SidePanel from './SidePanel.js';
+
 import Button from "@material-ui/core/Button";
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import { useParams } from 'react-router-dom';
 import { DataGrid } from '@material-ui/data-grid';
-import { Container, Paper, Box } from '@material-ui/core';
 import axiosInstance from "../../axios";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";

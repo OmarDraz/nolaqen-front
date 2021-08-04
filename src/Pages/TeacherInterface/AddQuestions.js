@@ -7,7 +7,6 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormLabel from '@material-ui/core/FormLabel';
 import SuccessIcon from '../../svg/SuccessIcon.gif'
-
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import DeleteIcon from '@material-ui/icons/Delete';
 import Divider from '@material-ui/core/Divider';

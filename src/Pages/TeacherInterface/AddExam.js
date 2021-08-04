@@ -3,7 +3,7 @@ import Dialog from '@material-ui/core/Dialog';
 import TextField from "@material-ui/core/TextField";
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { DateTimePicker, KeyboardDateTimePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
+import { DateTimePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
 import DateMomentUtils from '@date-io/moment';
 import RenderCellExpand from "./renderCellExpand";
 import SuccessIcon from '../../svg/SuccessIcon.gif'

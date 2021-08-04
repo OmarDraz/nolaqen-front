@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Route} from 'react-router-dom';
 
 import Logout from '../../Components/logout';
 import TeacherHeader from './Header'
