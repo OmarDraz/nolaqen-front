@@ -82,7 +82,7 @@ const RegisterPage = ()=>{
                     department: department,
                     level: parseInt(level)
                 }).then((res) => {
-                    hist.push('/login')
+                    hist.push('/')
                 })
             }}>
             <div className="registerForm">

@@ -435,7 +435,7 @@ if(isAuthenticated && userRole == 'student'){
               textDecoration: "none",
               color: "white",
             }}
-            to="/login"
+            to="/"
           >
             
             <Button variant="contained" style={{ margin: '22px', backgroundColor: '#FF5856', color: 'white' }}>
@@ -559,7 +559,7 @@ if(isAuthenticated && userRole == 'student'){
                   textDecoration: "none",
                   color: "white",
                 }}
-                to="/login"
+                to="/"
               >
                 
                 <Button variant="contained" color="secondary">
