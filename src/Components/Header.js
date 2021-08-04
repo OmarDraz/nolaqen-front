@@ -1,25 +1,17 @@
 import React, { useState, useEffect } from "react";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
+  BrowserRouter as
   NavLink,
   Link,
-  Redirect,
-  useParams,
 } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import AppBar from "@material-ui/core/AppBar";
 import Cookies from 'js-cookie'
 import jwt_decode from "jwt-decode";
-import Toolbar from "@material-ui/core/Toolbar";
-import { Link as LinkMaterial } from "@material-ui/core/Link";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import Fade from "@material-ui/core/Fade";
 import Button from "@material-ui/core/Button";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
@@ -33,19 +25,13 @@ import MenuOpenIcon from "@material-ui/icons/MenuOpen";
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import { red } from "@material-ui/core/colors";
 import Logo from '../svg/nolaqen.svg'
 
-import Logout from "./logout";
 import {
   Drawer,
   List,
   ListItem,
   ListItemIcon,
-  ListItemText,
-  Container,
   Typography,
   Divider,
 } from "@material-ui/core";
